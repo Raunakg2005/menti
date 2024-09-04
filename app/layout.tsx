@@ -1,9 +1,12 @@
 import type { Metadata } from "next";
 import { Inter, Nunito } from "next/font/google";
 import "./globals.css";
-import Navbar from "./components/navbar/Navbar";
+import Navbar from "./components/mainnavbar/Navbar";
+import Hero from "./components/mainhero/Hero";
+import About1 from "./components/about/About1";
+import About2 from "./components/about/About2";
 
-import Hero from "./components/hero/Hero";
+
 
 const font = Nunito({ subsets: ["latin"] });
 
@@ -23,7 +26,8 @@ export default function RootLayout({
         {children}
       <Navbar />
       <Hero />
-      
+      <About1 />
+      <About2 />
       </body>
     </html>
   );
